@@ -1,0 +1,82 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background:#121212;
+    font-family:'Montserrat', sans-serif;
+    overflow:hidden;
+}
+/* sdiebar */
+.sidebar{
+    width: 230px;
+    background: #000;
+    height: 100vh;
+    position: fixed;
+}
+.nav-link{
+    color:#a8a8a8;
+}
+.nav-link:hover{
+    color:#fff;
+}
+
+
+.maincontent{
+    height:100vh;
+    overflow-y:auto;
+    color:#fff;
+    margin-left: 230px;
+}
+.top-bar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(20,20,20,.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.nav-btn{
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: rgba(0,0,0,.7);
+    color: white;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #282828;
+    color: white;
+    font-weight: bold;
+}
+
+.upgrade{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.upgrade:hover{
+    color: white;
+}
+.player{
+    background:#181818;
+    height:90px;
+    border-top:1px solid #282828;
+}
+
+

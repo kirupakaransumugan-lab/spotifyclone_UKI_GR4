@@ -4,14 +4,251 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Spotify</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Font link -->
+        <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
+<!-- Fontasawsome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
         <link rel="stylesheet" href="./bootstrap5.3/css/bootstrap.min.css">
-    </head>
-    <body>
-        \
+
+<!-- Css link -->
+        <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+ <!-- landing page layout -->
+
+<!-- Nav and sidebar satsrs here -->
+    <div class="container-fluid p-0">
+
+    <div class="row g-0">
+            <!-- Sidebar is here -->
+    <aside class="sidebar col-2 p-4">
+
+            <h3 class="text-white fw-bold mb-5">
+                <i class="fa-brands fa-spotify text-success"></i>&nbsp; Spotify</h3>
         
-        <script src="./bootstrap5.3/js/bootstrap.bundle.min.js" async defer></script>
+        <nav class="nav flex-column gap-3"></nav>    
+                <a href="#home" class="nav-link fw-semibold">
+                    <i class="fa-solid fa-house me-3"></i>Home</a><br>
+
+                <a href="#search" class="nav-link fw-semibold">
+                    <i class="fa-solid fa-magnifying-glass me-3"></i>Search</a> <br>
+                
+                <a href="#library" class="nav-link fw-semibold">
+                    <i class="fa-solid fa-book me-3"></i>Your Library</a><br>
+
+    <hr class="text-secondary">
+        
+                <a href="#playlist" class="nav-link fw-semibold">
+                    <i class="fa-solid fa-square-plus me-3"></i>Create Playlist</a><br>
+                 
+                <a href="#liked" class="nav-link fw-semibold">
+                    <i class="fa-solid fa-heart me-3"></i>Liked Songs </a><br>
+
+            </nav>
+
+    </aside>    
+      
+    
+    
+    
+    <!-- U can only work here   -->
+
+ <main class="maincontent col-10 p-4">
+     <!-- Top Bar -->
+<header class="top-bar d-flex justify-content-between align-items-center px-4 py-3">
+
+    <div class="d-flex gap-3">
+        <button class="nav-btn rounded-circle">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button class="nav-btn rounded-circle">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="d-flex align-items-center gap-4">
+        <a href="#" class="upgrade">Upgrade</a>
+
+        <button class="profile rounded-circle">JD</button>
+    </div>
+
+</header>
+    
+         <section id="home">
+                <h2>Home</h2>
+            </section>
+
+            <section id="search">
+                <h2>Search</h2>
+            </section>
+
+            <section id="library">
+                <h2>Library</h2>
+            </section>
+
+        </main>
+        
+    </div>
+</div>        
+        
+<!--         
+footer stars here -->
+
+<footer class="player fixed-bottom d-flex justify-content-center align-items-center gap-4 text-white">
+    <i class="fa-solid fa-backward-step"></i>
+    <button class="btn btn-primary" onclick="document.getElementById('clickSound').play()"><i class="fa-solid fa-circle-play fs-2"></i></button>
+    <i class="fa-solid fa-forward-step"></i>
+
+
+     <!-- Current Time -->
+    <small id="currentTime">0:00</small>
+
+    <!-- Progress Slider -->
+    <input type="range"
+           id="progress"
+           value="0"
+           min="0"
+           max="100"
+           class="form-range w-25">
+
+    <!-- Duration -->
+    <small id="duration">5:00</small>
+
+    <!-- Audio Element -->
+<audio id="clickSound">
+  <source src="./assets/audio/Innisai.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Bootstrap Styled Button -->
+
+</footer>
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<script src="./bootstrap5.3/js/bootstrap.bundle.min.js" async defer>
+
+
+
+
+
+
+
+
+               </script>
     </body>
+
 </html>
