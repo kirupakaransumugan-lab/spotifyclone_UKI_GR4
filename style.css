@@ -75,6 +75,48 @@ body{
 .upgrade:hover{
     color: white;
 }
+
+/* ur style css starts here */
+/* home style */
+
+
+
+
+/* search style */
+
+
+
+
+
+
+/* library style */
+/* Main Library */
+
+.library-page{
+    height:100vh;
+    overflow-y:auto;
+    background:linear-gradient(to bottom,#1d1d2f,#121212 25%);
+}
+
+
+
+
+
+/* plalist style */
+
+
+
+
+
+
+
+/* likedsong style */
+
+
+
+/* ur css ends here */
+
+/* footer */
 .player{
     background:#121212;
     height:90px;
