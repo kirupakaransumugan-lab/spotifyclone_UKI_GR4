@@ -15,7 +15,7 @@ body{
    
  background: linear-gradient(194deg,rgba(30, 34, 79, 1) 0%, rgba(4, 0, 54, 1) 12%, rgba(33, 33, 33, 1) 100%, rgba(0, 0, 0, 1) 100%);
     font-family:'Montserrat', sans-serif;
-    overflow:hidden;
+    overflow:auto;
 }
 /* sdiebar */
 .sidebar{
@@ -40,6 +40,7 @@ body{
 }
 .top-bar{
     position: sticky;
+    border-radius: 20px;
     top: 0;
     z-index: 1000;
     background: rgba(20,20,20,.6);
@@ -79,6 +80,447 @@ body{
 /* ur style css starts here */
 /* home style */
 
+/* for immideate testing purpose we use ai to style it */
+.homestyle{
+
+    font-family:'Montserrat',sans-serif;
+
+    background:
+    linear-gradient(to bottom,#3c1d67 0%,#1d1d1d 20%,#121212 40%,#0d0d0d 100%);
+
+    color:#fff;
+
+    border-radius: 20px;
+/* 
+    overflow:auto; */
+
+}
+.content-area{
+
+    height:calc(100vh - 90px);   /* player height */
+
+    /* overflow-y:auto;
+
+    overflow-x:hidden; */
+
+    background:#121212;
+
+}
+
+#Home{
+
+    min-height:100vh;
+ margin-bottom:50px;
+
+}
+
+#library{
+
+    min-height:100vh;
+
+}
+
+#Home iframe,
+#library iframe{
+
+    width:100%;
+
+    height:100vh;
+
+    border:none;
+
+    display:block;
+
+}
+/* #Home iframe{
+    width:100%;
+    height:1000px;
+    border:none;
+} */
+/*=========================
+ Scrollbar
+=========================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#121212;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#555;
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1DB954;
+
+}
+
+/*=========================
+ Container
+=========================*/
+
+.container{
+
+    max-width:auto;
+    max-height:auto;
+
+}
+
+/*=========================
+ Titles
+=========================*/
+
+.section-title{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+.see-all{
+
+    color:#b3b3b3;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.see-all:hover{
+
+    color:#fff;
+
+}
+
+/*=========================
+ Good Morning Cards
+=========================*/
+
+.playlist-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.playlist-card:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.45);
+
+}
+
+.playlist-card img{
+
+    width:95px;
+
+    height:95px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.playlist-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.playlist-card h6{
+
+    margin-left:20px;
+
+    font-weight:600;
+
+    margin-bottom:0;
+
+}
+
+.play-btn{
+
+    position:absolute;
+
+    right:18px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1DB954;
+
+    color:#000;
+
+    font-size:22px;
+
+    opacity:0;
+
+    transform:translateY(15px);
+
+    transition:.35s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+
+}
+
+.playlist-card:hover .play-btn{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.play-btn:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================
+ Album Cards
+=========================*/
+
+.album-card{
+
+    background:#181818;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    overflow:hidden;
+
+    height:100%;
+
+    border:1px solid transparent;
+
+}
+
+.album-card:hover{
+
+    background:#242424;
+
+    border-color:rgba(255,255,255,.08);
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.5);
+
+}
+
+.album-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    margin-bottom:18px;
+
+}
+
+.album-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.45s;
+
+}
+
+.album-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.album-card h5{
+
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.album-card p{
+
+    color:#b3b3b3;
+
+    line-height:1.6;
+
+    font-size:15px;
+
+}
+
+/*=========================
+ Floating Play Button
+=========================*/
+
+.play-btn-circle{
+
+    position:absolute;
+
+    bottom:15px;
+
+    right:15px;
+
+    width:56px;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1DB954;
+
+    color:#000;
+
+    font-size:24px;
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+    transition:.35s;
+
+    box-shadow:0 12px 22px rgba(0,0,0,.35);
+
+}
+
+.album-card:hover .play-btn-circle{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.play-btn-circle:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================
+ Glass Highlight
+=========================*/
+
+.album-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    left:-120px;
+
+    width:220px;
+
+    height:220px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    transition:.5s;
+
+}
+
+.album-card:hover::before{
+
+    transform:scale(1.5);
+
+}
+
+/*=========================
+ Fade Animation
+=========================*/
+
+.playlist-card,
+.album-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* 
+Ai contenet ends here */
+
+
+
+
 
 
 
@@ -93,10 +535,12 @@ body{
 #library{
     height:calc(100vh - 160px);
     
+    
 }
 .library-page{
     border-radius:10px;;
     height:100vh;
+    
     overflow-y:auto;
     background:linear-gradient(to bottom,#1d1d2f,#121212 25%);
 
