@@ -83,26 +83,42 @@ body{
 
     height:calc(100vh - 90px);   /* player height */
 
-   overflow: auto;
+    overflow: auto;
+    padding: 20px;
 
     background:#121212;
+
+}
+#Home,#search
+#library{
+
+    width:100%;
+
+    border-radius:12px;
+
+    overflow:hidden;
 
 }
 
 #Home{
 
     min-height:100vh;
+      margin-bottom:35px; 
     /* margin-bottom: 50px; */
 
 }
-
+#Search{
+    min-height:100vh;
+      margin-bottom:35px; 
+}
 #library{
 
     min-height:100vh;
+      margin-bottom:35px; 
 
 }
 
-#Home iframe,
+#Home iframe, #Search iframe,
 #library iframe{
 
     width:100%;
@@ -120,9 +136,13 @@ body{
 
 
 /* search style */
-/* #search{
-     overflow:scroll; */
+.container{ background:#121212;
+   
+ background: linear-gradient(194deg,rgba(30, 34, 79, 1) 0%, rgba(4, 0, 54, 1) 12%, rgba(33, 33, 33, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    font-family:'Montserrat', sans-serif;
+    overflow:hidden;
 
+}
    .search-box{
     width:350px;
     border:none;
@@ -192,7 +212,7 @@ body{
     background:linear-gradient(to bottom,#1d1d2f,#121212 25%);
 
 
-     /* Glass Effect */
+     /* Glass Effect
     background:linear-gradient(
         to bottom,
         rgba(45,45,65,.75),
@@ -207,7 +227,7 @@ body{
 
     box-shadow:
         0 8px 30px rgba(0,0,0,.35),
-        inset 0 1px 0 rgba(255,255,255,.08);
+        inset 0 1px 0 rgba(255,255,255,.08); */
 }
 
 /* Scroll Bar */
