@@ -86,11 +86,11 @@ body{
     overflow: auto;
     padding: 20px;
 
-    background:#121212;
+    /* background:#121212; */
 
 }
-#Home,#search
-#library{
+#Home, #search,
+#library, #Liked{
 
     width:100%;
 
@@ -99,27 +99,15 @@ body{
     overflow:hidden;
 
 }
-
-#Home{
-
+#Home,
+#Search,
+#library,
+#Liked{
     min-height:100vh;
-      margin-bottom:35px; 
-    /* margin-bottom: 50px; */
-
+    margin-bottom:35px;
 }
-#Search{
-    min-height:100vh;
-      margin-bottom:35px; 
-}
-#library{
-
-    min-height:100vh;
-      margin-bottom:35px; 
-
-}
-
 #Home iframe, #Search iframe,
-#library iframe{
+#library iframe, #Liked iframe {
 
     width:100%;
 
@@ -133,7 +121,7 @@ body{
 /* home style */
 
 .homebody{
-    background:#121212;
+    /* background:#121212; */
     color:#fff;
     font-family:sans-serif;
     overflow: auto;
@@ -252,7 +240,8 @@ body{
 
 
 /* search style */
-.container{ background:#121212;
+.container{ 
+    border-radius: 20px;
    
  background: linear-gradient(194deg,rgba(30, 34, 79, 1) 0%, rgba(4, 0, 54, 1) 12%, rgba(33, 33, 33, 1) 100%, rgba(0, 0, 0, 1) 100%);
     font-family:'Montserrat', sans-serif;
@@ -486,7 +475,7 @@ body{
 .song-table{
     background:#181818;
     border-radius:10px;
-    overflow:hidden;
+    overflow:auto;
 }
 
 .song-table thead th{
