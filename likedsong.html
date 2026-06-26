@@ -1,93 +1,177 @@
-<div class="tab-pane fade" id="liked-songs-content" role="tabpanel" aria-labelledby="liked-songs-tab">
-    
-    <div class="search-nav d-flex align-items-center justify-content-between" style="background-color: #121212; padding: 15px 30px;">
-        <div class="d-flex align-items-center gap-3">
-            <button class="btn btn-dark rounded-circle btn-sm"><i class="fas fa-chevron-left"></i></button>
-            <button class="btn btn-dark rounded-circle btn-sm"><i class="fas fa-chevron-right"></i></button>
-        </div>
-        <div>
-            <span class="me-3 text-muted fw-bold small" style="cursor:pointer;">Upgrade</span>
-            <span class="bg-white text-black rounded-circle px-2 py-1 fw-bold small">JD</span>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked Song Section</title>
+    <link rel="stylesheet" href="./bootstrap5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container py-5">
+
+    <h2 class="text-white fw-bold mb-4">Liked Songs</h2>
+
+    <div class="table-responsive">
+
+        <table class="table table-dark align-middle song-table">
+
+            <thead>
+                <tr class="text-secondary">
+                    <th style="width:60px;">NO</th>
+                    <th>Title</th>
+                    <th>Album</th> 
+                      <th class="text-end">Time</th>
+                        <i class="bi bi-clock"></i>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+
+                    <td>
+                        <div class="d-flex align-items-center">
+
+                            <img src="./assets/likes song1.jpg"
+                                class="song-img me-3">
+
+                            <div>
+                                <h6 class="mb-0 text-white">
+                                    Hiphop Rap
+                                </h6>
+
+                                <small class="text-secondary">
+                                    Hiphop Aadhi
+                                </small>
+                            </div>
+
+                        </div>
+                    </td>
+
+                    <td>Single Pasanga</td>
+
+                    <td class="text-end">
+                        0:56
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>2</td>
+
+                    <td>
+
+                        <div class="d-flex align-items-center">
+
+                            <img src="./assets/likes song2.jpg"
+                                class="song-img me-3">
+
+                            <div>
+
+                                <h6 class="mb-0 text-white">
+                                    Folk Songs
+                                </h6>
+
+                                <small class="text-secondary">
+                                    Chinmayi
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </td>
+
+                    <td>Adi Aathi</td>
+
+                    <td class="text-end">
+                        1:26
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>3</td>
+
+                    <td>
+
+                        <div class="d-flex align-items-center">
+
+                            <img src="./assets/download.jpg"
+                                class="song-img me-3">
+
+                            <div>
+
+                                <h6 class="mb-0 text-white">
+                                    Melodies
+                                </h6>
+
+                                <small class="text-secondary">
+                                    Pradeep Kumar
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </td>
+
+                    <td>Nee Kavithaigalaa</td>
+
+                    <td class="text-end">
+                        3:06
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>4</td>
+
+                    <td>
+
+                        <div class="d-flex align-items-center">
+
+                            <img src="./assets/likes song 3.jpg"
+                                class="song-img me-3">
+
+                            <div>
+
+                                <h6 class="mb-0 text-white">
+                                    Love Songs
+                                </h6>
+
+                                <small class="text-secondary">
+                                    Shwetha Mohan
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </td>
+
+                    <td>Nee Paartha Vizhigal</td>
+
+                    <td class="text-end">
+                        2:16
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
     </div>
 
-    <div class="liked-songs-area" style="background-color: #121212; min-height: 85vh; padding: 20px 30px; border-radius: 8px;">
-        
-        <div class="row g-3 mb-4">
-            <div class="col-md-4 col-sm-6">
-                <div class="d-flex align-items-center rounded" style="background-color: #282828; overflow: hidden; height: 60px;">
-                    <img src="https://picsum.photos/60?random=20" alt="Chill" style="width: 60px; height: 60px; object-fit: cover;">
-                    <div class="ps-3">
-                        <p class="m-0 fw-bold text-white small">Chill Afternoon</p>
-                        <span class="text-muted" style="font-size: 11px;">Playlist • 24 songs</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="d-flex align-items-center rounded" style="background-color: #282828; overflow: hidden; height: 60px;">
-                    <img src="https://picsum.photos/60?random=21" alt="Workout" style="width: 60px; height: 60px; object-fit: cover;">
-                    <div class="ps-3">
-                        <p class="m-0 fw-bold text-white small">Workout Beats</p>
-                        <span class="text-muted" style="font-size: 11px;">Playlist • 37 songs</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="d-flex align-items-center rounded" style="background-color: #282828; overflow: hidden; height: 60px;">
-                    <img src="https://picsum.photos/60?random=22" alt="Night" style="width: 60px; height: 60px; object-fit: cover;">
-                    <div class="ps-3">
-                        <p class="m-0 fw-bold text-white small">Late Night Drive</p>
-                        <span class="text-muted" style="font-size: 11px;">Playlist • 18 songs</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="fw-bold mb-3 text-white">Liked Songs</h3>
-
-        <div class="table-responsive">
-            <table class="table table-borderless align-middle" style="color: #b3b3b3;">
-                <thead>
-                    <tr style="border-bottom: 1px solid #282828; font-size: 12px; text-transform: uppercase;">
-                        <th scope="col" style="width: 5%;">#</th>
-                        <th scope="col" style="width: 45%;">Title</th>
-                        <th scope="col" style="width: 40%;">Album</th>
-                        <th scope="col" style="width: 10%; text-align: right;"><i class="far fa-clock"></i></th>
-                    </tr>
-                </thead>
-                <tbody style="font-size: 14px;">
-                    <tr style="cursor: pointer; border-radius: 4px;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.08)'" onmouseout="this.style.backgroundColor='transparent'">
-                        <td class="text-muted">1</td>
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <img src="https://picsum.photos/40?random=31" class="rounded" style="width: 40px; height: 40px; margin-right: 15px;">
-                                <div>
-                                    <p class="m-0 fw-bold text-white">Blinding Lights</p>
-                                    <span class="text-muted small">The Weeknd</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>After Hours</td>
-                        <td style="text-align: right;">3:20</td>
-                    </tr>
-                    <tr style="cursor: pointer; border-radius: 4px;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.08)'" onmouseout="this.style.backgroundColor='transparent'">
-                        <td class="text-muted">2</td>
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <img src="https://picsum.photos/40?random=32" class="rounded" style="width: 40px; height: 40px; margin-right: 15px;">
-                                <div>
-                                    <p class="m-0 fw-bold text-white">Levitating</p>
-                                    <span class="text-muted small">Dua Lipa</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Future Nostalgia</td>
-                        <td style="text-align: right;">3:23</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
 </div>
 
+</body>
+</html>
