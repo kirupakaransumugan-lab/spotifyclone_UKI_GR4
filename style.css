@@ -83,6 +83,9 @@ body{
 
 
 /* search style */
+/* #search{
+     overflow:scroll; */
+
    .search-box{
     width:350px;
     border:none;
@@ -99,7 +102,7 @@ body{
 .music-card{
     height:180px;
     position:relative;
-    overflow:hidden;
+   
     border-radius:10px;
     cursor:pointer;
     box-shadow:0 4px 10px rgba(0,0,0,0.4);
@@ -155,7 +158,96 @@ body{
 
 
 /* likedsong style */
+  body{
+    background:#121212;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+.playlist{
+    max-width:420px;
+}
+
+.playlist-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:10px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.playlist-item:hover{
+    background:#2a2a2a;
+}
+
+.playlist-item img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+.playlist-item h6{
+    margin:0;
+    font-size:17px;
+    color:#fff;
+}
+
+.playlist-item p{
+    margin:0;
+    color:#b3b3b3;
+    font-size:14px;
+}
+
+.btn-dark{
+    background:#2b2b2b;
+    border:none;
+}
+
+.btn-dark:hover{
+    background:#3a3a3a;
+}
+
+.song-table{
+    background:#181818;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.song-table thead th{
+    color:#b3b3b3;
+    border-bottom:1px solid #333;
+    font-size:14px;
+}
+
+.song-table td{
+    border:none;
+    color:#b3b3b3;
+    vertical-align:middle;
+    padding:14px 10px;
+}
+
+.song-table tbody tr{
+    transition:.3s;
+    cursor:pointer;
+}
+
+.song-table tbody tr:hover{
+    background:#2a2a2a;
+}
+
+.song-img{
+    width:50px;
+    height:50px;
+    border-radius:6px;
+    object-fit:cover;
+}
+
+h6{
+    font-size:15px;
+}
 
 
 /* ur css ends here */
