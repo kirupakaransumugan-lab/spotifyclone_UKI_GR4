@@ -51,6 +51,48 @@
                 <a href="likedsong.html" class="nav-link fw-semibold">
                     <i class="fa-solid fa-heart me-3"></i>Liked Songs </a><br>
 
+        <hr class="text-secondary">
+                   <div class="playlist-list mt-3">
+
+    <a href="#" class="playlist-item d-flex align-items-center text-decoration-none mb-3">
+
+        <img src="./assets/audio/images/Godfather-2006-500x500.jpg"
+             class="playlist-img rounded">
+
+        <div class="ms-3">
+            <h6 class="mb-0 text-white">Innisai Alapadaiye</h6>
+            <small class="text-secondary">God Father</small>
+        </div>
+
+    </a>
+      
+    
+    <a href="#" class="playlist-item d-flex align-items-center text-decoration-none mb-3">
+
+        <img src="./assets/audio/images/workout.avif"
+             class="playlist-img rounded">
+
+        <div class="ms-3">
+            <h6 class="mb-0 text-white">Workout Beats</h6>
+            <small class="text-secondary">Playlist</small>
+        </div>
+
+    </a>
+    
+
+     <a href="#" class="playlist-item d-flex align-items-center text-decoration-none mb-3">
+
+        <img src="./assets/audio/images/night.jpg"
+             class="playlist-img rounded">
+
+        <div class="ms-3">
+            <h6 class="mb-0 text-white">Night Drive</h6>
+            <small class="text-secondary">Playlist</small>
+        </div>
+
+    </a>
+
+
             </nav>
 
     </aside>    
@@ -118,35 +160,88 @@
 
 <!-- Dont come here -->
   <!--footer stars here -->
+<footer class="player fixed-bottom">
 
-<footer class="player fixed-bottom d-flex justify-content-center align-items-center gap-4 text-white">
-    <i class="fa-solid fa-backward-step"></i>
-    <button class="btn btn-primary" onclick="document.getElementById('clickSound').play()"><i class="fa-solid fa-circle-play fs-2"></i></button>
-    <i class="fa-solid fa-forward-step"></i>
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
 
+            <!-- Left -->
+            <div class="col-3 d-flex align-items-center">
 
-     <!-- Current Time -->
-    <small id="currentTime">0:00</small>
+                <img src="./assets/audio/images/Godfather-2006-500x500.jpg"
+                     class="song-img me-3"
+                     alt="Song">
 
-    <!-- Progress Slider -->
-    <input type="range"
-           id="progress"
-           value="0"
-           min="0"
-           max="100"
-           class="form-range w-25">
+                <div>
+                    <h6 class="mb-0 text-white">Innisai Alapadaiye</h6>
+                    <small class="text-secondary">God Father</small>
+                </div>
 
-    <!-- Duration -->
-    <small id="duration">5:00</small>
+                <i class="fa-solid fa-heart text-success ms-3"></i>
 
-    <!-- Audio Element -->
-<audio id="clickSound">
-  <source src="./assets/audio/Innisai.mp3" type="audio/mpeg">
-</audio>
+            </div>
 
-<!-- Bootstrap Styled Button -->
+            <!-- Center -->
+            <div class="col-6">
+
+                <div class="d-flex justify-content-center align-items-center gap-4">
+
+                    <i class="fa-solid fa-backward-step"></i>
+
+                    <button class="btn btn-primary rounded-circle"
+                            onclick="document.getElementById('clickSound').play()">
+
+                        <i class="fa-solid fa-circle-play fs-2"></i>
+
+                    </button>
+
+                    <i class="fa-solid fa-forward-step"></i>
+
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center gap-2 mt-2">
+
+                    <small id="currentTime">0:00</small>
+
+                    <input type="range"
+                           id="progress"
+                           value="0"
+                           min="0"
+                           max="100"
+                           class="form-range progress-slider">
+
+                    <small id="duration">5:00</small>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="col-3 d-flex justify-content-end align-items-center gap-3">
+
+                <i class="fa-solid fa-computer"></i>
+
+                <i class="fa-solid fa-volume-high"></i>
+
+                <input type="range"
+                       class="form-range volume-slider">
+
+            </div>
+
+        </div>
+    </div>
+
+    <audio id="clickSound">
+        <source src="./assets/audio/Innisai.mp3" type="audio/mpeg">
+    </audio>
 
 </footer>
+
+                         
+
+
+
+</footer> 
         
             
             
