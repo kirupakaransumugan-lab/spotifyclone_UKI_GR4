@@ -126,19 +126,19 @@
      <div class="content-area">
 
     <section id="Home">
-        <iframe src="home.html"></iframe>
+        <!-- <iframe src="home.html"></iframe> -->
     </section>
 
     <section id="Search">
-        <iframe src="search.html"></iframe>
+        <!-- <iframe src="search.html"></iframe> -->
     </section>
 
     <section id="library">
-        <iframe src="library.html"></iframe>
+        <!-- <iframe src="library.html"></iframe> -->
     </section>
 
      <section id="Liked">
-        <iframe src="likedsong.html"></iframe>
+        <!-- <iframe src="likedsong.html"></iframe> -->
     </section>
 
 </div>
@@ -350,25 +350,36 @@
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-<script src="./bootstrap5.3/js/bootstrap.bundle.min.js" async defer>
+            <script>
+  // List of sections to load
+  const sections = [
+    { id: 'Home',    file: 'home.html'      },
+    { id: 'Search',  file: 'search.html'    },
+    { id: 'library', file: 'library.html'   },
+    { id: 'Liked',   file: 'likedsong.html' },
+  ];
+
+  sections.forEach(({ id, file }) => {
+    fetch(file)
+      .then(res => res.text())
+      .then(html => {
+        // Parse the fetched HTML and extract only the <body> content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        document.getElementById(id).innerHTML = doc.body.innerHTML;
+      });
+  });
+</script>
 
 
-
-
-
-
-
-
-               </script>
+            
+            
+            
+            
+            
+            
+            
+<script src="./bootstrap5.3/js/bootstrap.bundle.min.js" async defer></script>
     </body>
 
 </html>
