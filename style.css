@@ -319,13 +319,13 @@ body{
 #library{
     /* height:calc(100vh - 160px); */
     
-     width: 94%;
+     width: 100%;
     margin: 0 auto;
 }
 .library-page{
     border-radius:10px;;
-    height:100vh;
-    overflow-y:auto;
+    height: auto;
+    overflow-y:visible;
     /* background:linear-gradient(to bottom,#1d1d2f,#121212 25%); */
 
 
